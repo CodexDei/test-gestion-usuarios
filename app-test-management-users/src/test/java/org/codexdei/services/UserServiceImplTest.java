@@ -132,7 +132,7 @@ class UserServiceImplTest {
     //Cuando no encuentra el usuario en la busqueda por id
 
     @Test
-    void getUserById_NotFound() {
+    void testGetUserById_NotFound() {
         //Arrange:
         //Usamos thenThrow para que soporte la excepcion
         when(userRepository.findById(2L)).thenReturn(Optional.empty());
